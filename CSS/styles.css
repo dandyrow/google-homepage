@@ -1,9 +1,39 @@
-body, html {
-    height: 100%;
-    display: grid;
+body {
+    margin: 0;
 }
 
-.nav {
-    background: pink;
-    padding-top: -5px;
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1em auto 1.5em;
+}
+
+.main {
+    margin: auto;
+    margin-top: 19vh;
+    display: inline-block;
+}
+
+.logo {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+#search {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 470px;
+    border-radius: 50px;
+    border-color: #ddd;
+    border-style: solid;
+}
+
+#search:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgb(212, 212, 212);
+    border: #ddd;
 }
