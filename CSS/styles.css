@@ -5,7 +5,34 @@ body {
 .grid {
     height: 100vh;
     display: grid;
-    grid-template-rows: 1em auto 1.5em;
+    grid-template-rows: 5vh auto 15vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+span li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
 }
 
 .main {
@@ -32,8 +59,21 @@ form {
     border-style: solid;
 }
 
+#search:hover {
+    box-shadow: 0 0 8px rgb(212, 212, 212);
+    border: #ddd;
+}
+
 #search:focus {
     outline: none;
     box-shadow: 0 0 8px rgb(212, 212, 212);
     border: #ddd;
+}
+
+.footer {
+    background-color: #ddd;
+}
+
+.footer h4 {
+    padding: 14px 16px;
 }
